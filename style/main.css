@@ -11,6 +11,7 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow:hidden;
 }
 .container{
     padding:0 90px;
@@ -18,11 +19,12 @@ body{
 .navbar{
     height:70px;
 }
-.navbar .bars{
+.navbar .bar{
     display:none;
 }
 .navbar .container{
     display:flex;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -72,6 +74,7 @@ li.sign-join a:hover{
     background:url(../images/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg);
     background-size: cover;
     position: relative;
+    overflow:visible;
 }
 .showcase .showbox{
     position: absolute;
@@ -102,12 +105,12 @@ li.sign-join a:hover{
 }
 #form{
     display:flex;
-    align-items:center;
-    width:100%;
+    width:100%; /* try here */
+    align-items: center;
 }
 #form .input-field{
     height: 60px;
-    width:70%;
+    width:100vw;
     border:none;
     border-radius: 5px;
     background:#fff;
@@ -127,6 +130,7 @@ li.sign-join a:hover{
 .input-field i{
     color:var(--sign-in-color);
     font-size: 23px;
+    cursor:pointer;
 }
 #form .btn{
     height:49px;
@@ -142,3 +146,23 @@ li.sign-join a:hover{
 
 
 /* Responisive Design */
+
+@media only screen and (max-width:1249px){
+    .navbar .bar{
+        display: block;
+        border:none;
+        border:1px solid var(--sign-in-color);
+        border-radius: 5px;
+        cursor:pointer;
+        padding:10px 15px;
+    }
+    .bar i{
+        font-size: 30px;
+        color:var(--sign-in-color);
+        font-weight: bolder;
+    }
+    .navbar ul{
+        display:none;
+    }
+    
+}
