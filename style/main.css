@@ -29,6 +29,11 @@ body{
     font-weight: bolder;
     position:absolute;
     top:20px;
+    color:var(--sign-in-color)
+}
+.logo span{
+    color:var(--sign-in-color);
+    font-size: 32px;
 }
 .navbar ul{
    list-style-type:none; 
@@ -46,12 +51,18 @@ body{
     font-size: 23px;
     font-weight: 400;
 }
-.navbar ul li.sign-join a{
+.navbar li.sign-join a{
     margin-left: 50px;
     color:var(--sign-in-color);
     border:1px solid var(--sign-in-color);
-    padding:5px 15px;
+    padding:5px 19px;
+    font-size: 24px;
     border-radius: 30px;
+    transition: all 0.3s ease-in-out
+}
+li.sign-join a:hover{
+    background:var(--sign-in-color);
+    color:#fff;
 }
 .showcase{
     height: 70vh;
@@ -61,13 +72,58 @@ body{
 }
 .showcase .showbox{
     position: absolute;
-    bottom: 20px;
+    bottom: -80px;
     background:var(--sign-in-color);
     color:#fff;
     left:50%;
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     transform: translate(-50%);
-    padding:3rem 5rem;
+    padding:3rem 3rem;
+    border:none;
+    border-radius: 5px;
 }
 .showbox .title{
-    font-size: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+    color:#2cccc3;
+}
+.showbox .subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+#form{
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+#form .input-field{
+    height: 60px;
+    width:70%;
+    border:none;
+    border-radius: 5px;
+    margin-right:20px;
+}
+#form .input-field input{
+    width:100%;
+    height: 100%;
+    font-size: 20px;
+    border:none;
+    border-radius: 5px;
+    padding:0 10px;
+}
+#form .btn{
+    height:49px;
+    padding:0 29px;
+    border:none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin:0 10px;
+    background:var(--secondary-color);
+    color:#000;
 }
