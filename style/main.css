@@ -18,6 +18,9 @@ body{
 .navbar{
     height:70px;
 }
+.navbar .bars{
+    display:none;
+}
 .navbar .container{
     display:flex;
     justify-content: space-between;
@@ -107,15 +110,23 @@ li.sign-join a:hover{
     width:70%;
     border:none;
     border-radius: 5px;
+    background:#fff;
     margin-right:20px;
+    display:flex;
+    align-items: center;
 }
 #form .input-field input{
-    width:100%;
+    width:90%;
     height: 100%;
     font-size: 20px;
     border:none;
+    background:#fff;
     border-radius: 5px;
     padding:0 10px;
+}
+.input-field i{
+    color:var(--sign-in-color);
+    font-size: 23px;
 }
 #form .btn{
     height:49px;
@@ -126,4 +137,8 @@ li.sign-join a:hover{
     margin:0 10px;
     background:var(--secondary-color);
     color:#000;
+    cursor:pointer;
 }
+
+
+/* Responisive Design */
