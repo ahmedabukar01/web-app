@@ -78,7 +78,7 @@ li.sign-join a:hover{
 
 .showcase .showbox{
     position: absolute;
-    top: 45vh;
+    top: 50vh;
     background:var(--sign-in-color);
     color:#fff;
     left:50%;
@@ -95,6 +95,7 @@ li.sign-join a:hover{
     font-size: 3.5rem;
     text-align: center;
     margin-bottom: 0.4rem;
+    font-weight: bolder;
     color:#2cccc3;
 }
 .showbox .subtitle{
@@ -102,6 +103,7 @@ li.sign-join a:hover{
     margin-bottom: 10px;
     font-weight: lighter;
     margin-bottom: 30px;
+    text-align: center;
 }
 #form{
     display:flex;
@@ -168,10 +170,69 @@ li.sign-join a:hover{
     .navbar ul{
         display:none;
     }
+
+    /* Showcase */
     #form{
         flex-direction: column;
     }
     #form .btn-box{
         margin-top:15px;
+    }
+}
+
+@media only screen and (max-width:1249px){
+    .showbox .title{
+        font-size: 3rem;
+    }
+    .showbox .subtitle{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width:888px){
+    .showbox .title{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .showbox .subtitle{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width:770px){
+    .showcase .showbox{
+        width:80vw;
+    }
+}
+@media only screen and (max-width:480px){
+    .showcase .showbox{
+        width:85vw;
+    }
+    .showbox .title{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .showbox .subtitle{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width:280px){
+    .showcase .showbox{
+        width:90vw;
+        padding: 3rem 1rem;
+    }
+    .showbox .title{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .showbox .subtitle{
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    #form .btn{
+        padding:0 25px;
+        font-size: 22px;
     }
 }
