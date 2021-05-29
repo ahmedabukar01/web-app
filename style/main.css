@@ -197,7 +197,7 @@ i{
         font-size: 30px;
         color:var(--secondary-color);
         position: absolute;
-        right:50px;
+        right:35px;
         top:20px;
     }
     .navbar ul li a{
