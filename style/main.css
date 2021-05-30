@@ -265,7 +265,12 @@ i{
         letter-spacing: 1px;
     }
 }
-@media only screen and (max-width:280px){
+@media only screen and (max-width:380px){
+    .agency{
+        margin-top: 13rem;
+    }
+}
+@media only screen and (max-width:290px){
     .showcase .showbox{
         width:90vw;
         padding: 3rem 1rem;
@@ -280,7 +285,7 @@ i{
         letter-spacing: 1px;
     }
     #form .btn{
-        padding:0 25px;
-        font-size: 22px;
+        padding:0 20px;
+        font-size: 18px;
     }
 }
