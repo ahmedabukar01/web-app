@@ -77,12 +77,13 @@ li.sign-join a:hover{
     height: 70vh;
     background:url(../images/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
 .showcase .showbox{
     position: absolute;
-    top: 50vh;
+    top: 40vh;
     background:var(--sign-in-color);
     color:#fff;
     left:50%;
@@ -157,6 +158,12 @@ li.sign-join a:hover{
 i{
     color:blue;
     font-size: 20px;
+}
+
+/* Agency */
+.agency{
+    margin-top:12rem;
+    background:red;
 }
 
 /* Responisive Design */
