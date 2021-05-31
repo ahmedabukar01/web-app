@@ -13,6 +13,10 @@ body{
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
+.flex{
+    display:flex;
+    align-items: center;
+}
 .container{
     padding:0 90px;
     margin:0 auto;
@@ -59,6 +63,10 @@ body{
     margin:0 10px;
     font-size: 18px;
     font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.navbar ul li:not(.sign-join) a:hover{
+    border-bottom: 1px solid var(--primary-color)
 }
 .navbar li.sign-join a{
     margin-left: 50px;
@@ -71,6 +79,12 @@ body{
 }
 li.sign-join a:hover{
     background:var(--primary-color);
+    color:#fff;
+}
+li.sign-join a i{
+    transition: all 0.3s ease-in-out;
+}
+li.sign-join a:hover i{
     color:#fff;
 }
 .showcase{
@@ -202,9 +216,40 @@ i{
 }
 .agency .house-box .house-image{
     width:100%;
+    position: relative;
 }
 .agency .house-image img{
     width:100%;
+}
+.agency .house-image .house-name{
+    background:rgba(0, 0, 0, 0.568);
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color:#fff;
+    bottom: 4px;
+    position: absolute;
+}
+.agency .house-info i{
+    margin-right:7px;
+}
+.house-info .location i{
+    font-size: 19px;
+}
+.house-info .house i{
+    font-size: 16px;
+}
+.house-info .size i{
+    font-size: 18px;
+}
+.house-info .size span{
+    margin-right: 7px;
+}
+.house-info .price i{
+    font-size: 16px;
 }
 /* Responisive Design */
 
