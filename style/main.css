@@ -181,19 +181,35 @@ i{
     height: 600px;
 }
 .agency .profile-image{
-    display: inline;
+    min-width:180px;
     width:180px;
-    height: 200px;
+    height: 180px;
+    background:red;
+}
+.agency .user-agency{
+    display: flex;
+    flex-direction: column;
+}
+.user-info{
+    background:purple;
 }
 .agency .profile-image img{
     width:100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 .agency .user-info .top{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+.agency .info .text{
+    font-weight: bold;
+    font-size:19px;
+}
+.agency .info .nm{
+    font-weight: 300;
 }
 .agency .top .info{
     margin-left:30px;
@@ -213,11 +229,12 @@ i{
     background:var(--primary-color);
 }
 .agency .house-box{
-    width:380px;
+    background:red;
 }
 .agency .house-box .house-image{
-    width:100%;
+    max-width:380px;
     position: relative;
+    background:green;
 }
 .agency .house-image img{
     width:100%;
@@ -337,6 +354,9 @@ i{
     .showcase .showbox{
         width:80vw;
     }
+    .agency .info .text{
+        font-size:18px;
+    }
 }
 @media only screen and (max-width:497px){
     .showcase .showbox{
@@ -349,6 +369,26 @@ i{
     .showbox .subtitle{
         font-size: 17px;
         letter-spacing: 1px;
+    }
+    .agency .user-info .top{
+       flex-direction: column;
+    }
+    .agency .user-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .agency .user-info .text-name{
+        margin-top: 10px;
+    }
+    .agency .info .text{
+        font-size:16px;
+    }
+    .agency .top .info{
+        margin-left:15px;
+    }
+    .agency .user-info .btn{
+        font-size: 15px;
     }
 }
 @media only screen and (max-width:398px){
