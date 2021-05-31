@@ -9,6 +9,7 @@
     padding:0;
     box-sizing:border-box;
 }
+html,
 body{
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
@@ -319,7 +320,7 @@ i{
         letter-spacing: 1px;
     }
 }
-@media only screen and (max-width:888px){
+@media only screen and (max-width:918px){
     .showbox .title{
         font-size: 2.5rem;
         margin-bottom: 10px;
@@ -329,7 +330,7 @@ i{
         letter-spacing: 1px;
     }
 }
-@media only screen and (max-width:770px){
+@media only screen and (max-width:796px){
     .container{
         padding:0 40px;
     }
@@ -337,7 +338,7 @@ i{
         width:80vw;
     }
 }
-@media only screen and (max-width:480px){
+@media only screen and (max-width:497px){
     .showcase .showbox{
         width:85vw;
     }
@@ -346,28 +347,46 @@ i{
         margin-bottom: 10px;
     }
     .showbox .subtitle{
-        font-size: 18px;
+        font-size: 17px;
         letter-spacing: 1px;
     }
 }
-@media only screen and (max-width:380px){
+@media only screen and (max-width:398px){
+    .showbox .title{
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+    .showbox .subtitle{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    #form .input-field{
+        height: 45px;
+    }
+    #form .btn{
+        padding:0 21px;
+        font-size: 19px;
+    }
     .agency{
-        margin-top: 13rem;
+        margin-top: 15rem;
     }
 }
-@media only screen and (max-width:290px){
+@media only screen and (max-width:300px){
     .showcase .showbox{
         width:90vw;
         padding: 3rem 1rem;
     }
     .showbox .title{
-        font-size: 32px;
+        font-size: 25px;
         margin-bottom: 15px;
     }
     .showbox .subtitle{
-        font-size: 18px;
+        font-size: 13px;
         text-align: center;
         letter-spacing: 1px;
+    }
+    #form .input-field{
+        height: 40px;
     }
     #form .btn{
         padding:0 20px;
