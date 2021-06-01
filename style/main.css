@@ -430,3 +430,25 @@ i{
         font-size: 18px;
     }
 }
+/* @media only screen and (max-width:300px){
+    .showcase .showbox{
+        width:90vw;
+        padding: 3rem 1rem;
+    }
+    .showbox .title{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .showbox .subtitle{
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    #form .input-field{
+        height: 40px;
+    }
+    #form .btn{
+        padding:0 20px;
+        font-size: 18px;
+    }
+} */
