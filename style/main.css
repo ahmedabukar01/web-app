@@ -198,6 +198,7 @@ i{
     object-fit: cover;
     border-radius: 50%;
 }
+
 .agency .user-info .top{
     display: flex;
     justify-content: flex-start;
@@ -247,6 +248,10 @@ i{
     bottom: 4px;
     position: absolute;
 }
+.agency .house-box{
+    width:fit-content;
+}
+
 .agency .house-info i{
     margin-right:7px;
 }
@@ -264,6 +269,12 @@ i{
 }
 .house-info .price i{
     font-size: 16px;
+}
+.agency .house-box .house-info .flex:nth-of-type(even){
+    background:rgb(216, 213, 213);
+}
+.agency .house-box .house-info .flex{
+    margin-bottom: 2px;
 }
 
 /* Responisive Design */
